@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".homePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="@color/primary">
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+
+            android:text="Welcome Pharmacist"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <GridLayout
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="120sp"
+            android:layout_marginRight="10sp"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/BTNewItem"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="10sp"
+                app:cardCornerRadius="10sp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/add" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="30sp"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:text="Add Items"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/BTViewInventory"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="10sp"
+                app:cardCornerRadius="10sp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/view" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:paddingLeft="35sp"
+                    android:text="View Inventory"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/BTViewOrders"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="10sp"
+                app:cardCornerRadius="10sp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/vieworder" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:paddingLeft="38sp"
+                    android:text="View Orders"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/BTprofile"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="10sp"
+                app:cardCornerRadius="10sp">
+
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="77dp"
+                    android:src="@drawable/viewprofile" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="30sp"
+                    android:paddingLeft="33sp"
+                    android:paddingBottom="30sp"
+                    android:text="View Profile"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/BTliveChat"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="10sp"
+                app:cardCornerRadius="10sp">
+
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="77dp"
+                    android:src="@drawable/livechat" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:paddingLeft="45sp"
+                    android:text="Live Chats"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/BTlogout"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="10sp"
+                app:cardCornerRadius="10sp">
+
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="77dp"
+                    android:src="@drawable/logout" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="30sp"
+                    android:paddingLeft="30sp"
+                    android:paddingBottom="30sp"
+                    android:text="Logout"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
